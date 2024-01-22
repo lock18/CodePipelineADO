@@ -7,9 +7,9 @@ pool:
 variables:
 - group: 'mainframe-pipeline-parameters'
 - name: 'ispwApplication'
-  value: 'MKS1' 
+  value: 'DDL1' 
 - name: 'ispwContainerName'
-  value: 'ADOREL01'
+  value: 'ADODDL1'
 - name: 'ispwContainerType'
   value: '1'
 - name: 'ispwLevel'
