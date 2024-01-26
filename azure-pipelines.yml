@@ -144,7 +144,7 @@ stages:
           echo Environment      : $(tttEnvironment)
           echo User ID          : $(hostUser)
           echo CES URI          : $(cesUri)
-          echo CES User ID      : $(hostUserTT)
+          echo CES User ID      : $(cesUser)
           echo Test Folder      : $(testFolderVt)
           echo CC Repository    : $(ccRepo)
           echo CC System        : $(ccSystem)
@@ -158,8 +158,8 @@ stages:
               -p $(hostPassword) ^
               rem -s $(cesUri)/totaltestapi/ ^
               -s http://198.147.191.82:2020/totaltestapi/ ^
-              -cesu $(hostUserTT) ^
-              -cesp $(hostPasswordTT) ^
+              -cesu $(cesUser) ^
+              -cesp $(cesPassword) ^
               -f $(testFolderVt) ^
               -pnf changedPrograms.json ^
               -ccrepo $(ccRepo) ^
