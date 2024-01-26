@@ -144,7 +144,7 @@ stages:
           echo Environment      : $(tttEnvironment)
           echo User ID          : $(hostUser)
           echo CES URI          : $(cesUri)
-          echo CES User ID      : $(hostUser)
+          echo CES User ID      : $(hostUserTT)
           echo Test Folder      : $(testFolderVt)
           echo CC Repository    : $(ccRepo)
           echo CC System        : $(ccSystem)
@@ -154,8 +154,8 @@ stages:
           CD $(workspaceRoot)
           $(cliPath)\TotalTestFTCLI.bat ^
               -e $(tttEnvironment) ^
-              -u $(hostUserTT) ^
-              -p $(hostPasswordTT) ^
+              -u $(hostUser) ^
+              -p $(hostPassword) ^
               rem -s $(cesUri)/totaltestapi/ ^
               -s http://198.147.191.82:2020/totaltestapi/ ^
               -cesu $(hostUserTT) ^
