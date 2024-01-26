@@ -143,6 +143,7 @@ stages:
           echo Executing Unit Tests using Parameters
           echo Environment      : $(tttEnvironment)
           echo User ID          : $(hostUser)
+          echo P Word           : $(hostPassword)
           echo CES URI          : $(cesUri)
           echo CES User ID      : $(cesUser)
           echo Test Folder      : $(testFolderVt)
