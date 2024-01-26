@@ -172,7 +172,7 @@ stages:
               -v 6 ^
               -l jenkins ^
               -loglevel INFO ^
-              -data $(cliWorkspace)
+              -data $(cliWorkpace)
 
   # Download Code Coverage Results
     - task: CmdLine@2
