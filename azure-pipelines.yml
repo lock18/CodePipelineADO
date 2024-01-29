@@ -156,6 +156,7 @@ stages:
               -e $(tttEnvironment) ^
               -u $(cesUser) ^
               -p $(cesPassword) ^
+              -cp 1047 ^
               rem -s $(cesUri)/totaltestapi/ ^
               -s http://198.147.191.82:2020/totaltestapi/ ^
               -cesu $(cesUser) ^
