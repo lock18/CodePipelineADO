@@ -144,7 +144,6 @@ stages:
           echo Environment      : $(tttEnvironment)
           echo User ID          : $(hostUser)
           echo CES URI          : $(cesUri)
-          echo CES User ID      : $(cesUser)
           echo Test Folder      : $(testFolderVt)
           echo CC Repository    : $(ccRepo)
           echo CC System        : $(ccSystem)
