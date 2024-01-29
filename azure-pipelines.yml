@@ -154,13 +154,13 @@ stages:
           CD $(workspaceRoot)
           $(cliPath)\TotalTestFTCLI.bat ^
               -e $(tttEnvironment) ^
-              -u $(cesUser) ^
-              -p $(cesPassword) ^
-              -cp 1047 ^
+              -u $(hostUser) ^
+              -p $(hostPassword) ^
+              -cp $(hostCodePage) ^
               rem -s $(cesUri)/totaltestapi/ ^
               -s http://198.147.191.82:2020/totaltestapi/ ^
-              -cesu $(cesUser) ^
-              -cesp $(cesPassword) ^
+              -cesu $(hostUser) ^
+              -cesp $(hostPassword) ^
               -f $(testFolderVt) ^
               -pnf changedPrograms.json ^
               -ccrepo $(ccRepo) ^
