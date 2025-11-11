@@ -9,7 +9,7 @@ variables:
 - name: 'ispwApplication'
   value: 'DDL1' 
 - name: 'ispwContainerName'
-  value: 'ADODDL1'
+  value: 'ADODDL'
 - name: 'ispwContainerType'
   value: '1'
 - name: 'ispwLevel'
